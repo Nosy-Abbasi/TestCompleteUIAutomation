@@ -1,0 +1,38 @@
+﻿# booking_functions.py
+import common_functions as cf
+import BookTicketLocators
+
+def book_ticket():
+    """Function to book a ticket."""
+    cf.click(BookTicketLocators.LOGIN_BUTTON, "Login Button")
+    cf.enter_text(BookTicketLocators.BOOKING_PANEL, "Test", "Booking Panel")
+    cf.enter_text(BookTicketLocators.BOOKING_TEXTAREA, "Test", "Booking Text Area")
+    cf.click(BookTicketLocators.DAY_RADIO_BUTTON, "Day Radio Button")
+    cf.click(BookTicketLocators.ADD_BUTTON, "Add Button")
+    cf.click(BookTicketLocators.CONFIRM_BUTTON, "Confirm Button")
+
+def verify_booking():
+    """Function to verify booking confirmation message."""
+    
+    expected_message = "Ticket is booked sucessfully."
+    cf.delay(5)
+    actual_message = cf.get_text(BookTicketLocators.SUCCESS_LABEL, "Success Label")
+    
+    # Use the new common function for verification
+    cf.compare_messages(expected_message, actual_message, "Booking Confirmation")
+
+    cf.click(BookTicketLocators.SUCCESS_OK_BUTTON, "Success OK Button")
+    
+def verify_booking1():
+    """Function to verify booking confirmation message."""
+    
+    expected_message = "Ticket is booked successfully."
+    cf.delay(5)
+    actual_message = cf.get_text(BookTicketLocators.SUCCESS_LABEL, "Success Label")
+    
+    # Use the new common function for verification
+    cf.compare_messages(expected_message, actual_message, "Booking Confirmation")
+
+    cf.click(BookTicketLocators.SUCCESS_OK_BUTTON, "Success OK Button")
+
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="103 - Login"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyAEMAQgBCADgARABFAEYALQAzAEQAQwA0AC0ANAAxAEQAMQAtAEIARABDADIALQAzADQAQwA1ADQANQAzADQAMgAwAEYANwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="6712"/>
+						<Prp name="starttime" type="D" value="45735.644577963"/>
+						<Prp name="duration" type="I" value="6712"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings">
+							<Node name="warning1">
+								<Prp name="msg" type="S" value="The &quot;UserLogin&quot; object was replaced with a similar object."/>
+							</Node>
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="There is (are) 1 running instance(s) of &quot;C:\Users\SpanIdea\OneDrive\Desktop\Broadcom Automation\Java-JavaFx-Swing-Projects-Desktop-Application-GUI-Software\Software Executable JAR\railway.jar&quot;. New instances will not be launched."/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="name" type="S" value="101 - Passed Test"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA5ADMAQQBGADMANwA5ADEALQA1ADQANQBCAC0ANAAxAEUAOQAtADgAOAA2ADAALQBEADMANwBGADMANgBGAEUANABBADgAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="17502"/>
+						<Prp name="starttime" type="D" value="45735.6446557755"/>
+						<Prp name="duration" type="I" value="17502"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings">
+							<Node name="warning1">
+								<Prp name="msg" type="S" value="There may be an error (or errors) caused by test self-healing."/>
+							</Node>
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="There is (are) 1 running instance(s) of &quot;C:\Users\SpanIdea\OneDrive\Desktop\Broadcom Automation\Java-JavaFx-Swing-Projects-Desktop-Application-GUI-Software\Software Executable JAR\railway.jar&quot;. New instances will not be launched."/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Booking Confirmation verification failed! Expected: 'Ticket is booked successfully.', Got: 'Ticket is booked sucessfully.'"/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="102 - Failed Test"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBAEUAMwA2ADkARgA0ADQALQA5AEMAMgA1AC0ANABCAEYANAAtADgARgAwADEALQAwADcAQQBCAEMARABCAEIARQBBADUAQwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="8302"/>
+						<Prp name="starttime" type="D" value="45735.6448584028"/>
+						<Prp name="duration" type="I" value="8302"/>
+					</Node>
+				</Node>
+				<Prp name="warningtests" type="I" value="1"/>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="45735.644577963"/>
+				<Prp name="failedtests" type="I" value="1"/>
+				<Prp name="duration" type="I" value="32516"/>
+			</Node>
+		</Node>
+		<Prp name="tests" type="I" value="3"/>
+		<Prp name="name" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+		<Prp name="testname" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="user" type="S" value="SpanIdea"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="stop" type="D" value="45735.6449553241"/>
+		<Prp name="host" type="S" value="NOSY"/>
+		<Prp name="key" type="S" value="{D44EF75C-0437-40D8-B537-D4FAA61CA7F7}"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="starttime" type="D" value="45735.6445778704"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+	</Node>
+</Nodes>

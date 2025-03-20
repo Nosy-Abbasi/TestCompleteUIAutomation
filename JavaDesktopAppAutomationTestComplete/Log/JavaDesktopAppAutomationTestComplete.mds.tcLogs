@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45735.6410358333"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{AF7E6501-962F-4B71-B00B-E46ED150B4CD}"/>
+				<Prp name="nameofroot" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+				<Prp name="relpath" type="S" value="19-03-2025_15_23_05_496\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45735.6421793982"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{C5575B19-66FA-40B6-A437-B9B45F497A84}"/>
+				<Prp name="nameofroot" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+				<Prp name="relpath" type="S" value="19-03-2025_15_24_44_301\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45735.6431076389"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{41E93670-AAD3-42AB-BD65-0C966E1BF8D1}"/>
+				<Prp name="nameofroot" type="S" value="Keyword Test Log [Login]"/>
+				<Prp name="relpath" type="S" value="19-03-2025_15_26_04_500\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45735.6445778009"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{64F1B978-BBC2-47F5-A283-3E4305B5DA39}"/>
+				<Prp name="nameofroot" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+				<Prp name="relpath" type="S" value="19-03-2025_15_28_11_522\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="101 - Passed Test"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBFAEYAQwA5ADEANgBDAEQALQBBADgARQBGAC0ANAA5AEYANAAtADkARQBFAEYALQBGAEEAQgBBAEMAMwA3ADYAOQAxAEYANwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="8817"/>
+						<Prp name="starttime" type="D" value="45735.6410428819"/>
+						<Prp name="durationwithoutchildren" type="I" value="8817"/>
+						<Prp name="status" type="I" value="0"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="There is (are) 1 running instance(s) of &quot;C:\Users\SpanIdea\OneDrive\Desktop\Broadcom Automation\Java-JavaFx-Swing-Projects-Desktop-Application-GUI-Software\Software Executable JAR\railway.jar&quot;. New instances will not be launched."/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error3">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value="The operation cannot be completed due to an unexpected window."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Unexpected window: 'Message'"/>
+							</Node>
+							<Node name="error1">
+								<Prp name="msg" type="S" value="Could not close the unexpected window"/>
+							</Node>
+						</Node>
+						<Prp name="name" type="S" value="103 - Login"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCAEQANQA4AEEAMQBCADYALQA4AEQARQAyAC0ANAAzADQAOAAtADgAQwA3AEUALQBCAEYAOAA2AEMANQA0ADkARABEADMARgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="10930"/>
+						<Prp name="starttime" type="D" value="45735.6412553935"/>
+						<Prp name="durationwithoutchildren" type="I" value="10930"/>
+						<Prp name="status" type="I" value="2"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="There is (are) 1 running instance(s) of &quot;C:\Users\SpanIdea\OneDrive\Desktop\Broadcom Automation\Java-JavaFx-Swing-Projects-Desktop-Application-GUI-Software\Software Executable JAR\railway.jar&quot;. New instances will not be launched."/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Booking Confirmation verification failed! Expected: 'Ticket is booked successfully.', Got: 'Ticket is booked sucessfully.'"/>
+							</Node>
+						</Node>
+						<Prp name="name" type="S" value="102 - Failed Test"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBDADAAMQA2AEMANgAzADIALQA1AEEANwBEAC0ANABDAEQANwAtAEEAQQA2ADAALQAyAEQAOQA5ADkAOQA1AEIAQwA0AEUAQgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="9523"/>
+						<Prp name="starttime" type="D" value="45735.6411451042"/>
+						<Prp name="durationwithoutchildren" type="I" value="9523"/>
+						<Prp name="status" type="I" value="2"/>
+					</Node>
+				</Node>
+				<Prp name="failedtests" type="I" value="2"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+				<Prp name="duration" type="I" value="29270"/>
+				<Prp name="starttime" type="D" value="45735.6410428819"/>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="tests" type="I" value="3"/>
+		<Prp name="name" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="testname" type="S" value="JavaDesktopAppAutomationTestComplete"/>
+		<Prp name="user" type="S" value="SpanIdea"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="key" type="S" value="{4A417D51-179F-4327-B606-BE3E2ECC6FBA}"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="stop" type="D" value="45735.6413827315"/>
+		<Prp name="failedtests" type="I" value="2"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="starttime" type="D" value="45735.6410427894"/>
+		<Prp name="host" type="S" value="NOSY"/>
+	</Node>
+</Nodes>

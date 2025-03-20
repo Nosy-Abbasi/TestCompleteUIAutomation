@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{CCEF3ED8-5BA3-4DC7-B6A3-E614903C7369}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="java" Key="{1FE8A7B9-83DC-4D5F-9CC2-2A294D022482}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="java" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="UserLogin" Key="{47924578-C968-454F-9C60-286FB2ED7771}">
+								<Image FileName="-927200760" Left="0" Top="0" Right="1014" Bottom="597" />
+								<Properties>
+									<Property Name="JavaFullClassName">
+										<Value Value="User.UserLogin" />
+									</Property>
+									<Property Name="AWTComponentAccessibleName">
+										<Value Value="" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="RootPane" Key="{3C6C4FEE-421F-423F-8BEE-64F08A36AD39}">
+										<Image FileName="-927200760" Left="9" Top="38" Right="1005" Bottom="588" />
+										<Properties>
+											<Property Name="JavaFullClassName">
+												<Value Value="javax.swing.JRootPane" />
+											</Property>
+											<Property Name="AWTComponentAccessibleName">
+												<Value Value="" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="null_layeredPane" Key="{B1AA1D11-0095-4F1B-AB51-E1318B836617}">
+												<Image FileName="-927200760" Left="9" Top="38" Right="1005" Bottom="588" />
+												<Properties>
+													<Property Name="AWTComponentName">
+														<Value Value="null.layeredPane" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="Panel" Key="{92DC37FA-B263-45A5-BFEC-CE6D74BA04A3}">
+														<Image FileName="-927200760" Left="9" Top="38" Right="1005" Bottom="588" />
+														<Properties>
+															<Property Name="JavaFullClassName">
+																<Value Value="javax.swing.JPanel" />
+															</Property>
+															<Property Name="AWTComponentAccessibleName">
+																<Value Value="" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="Button" Key="{CFA702F2-E699-4F31-A775-C5D25C63F063}">
+																<Image FileName="-927200760" Left="45" Top="210" Right="645" Bottom="508" />
+																<TypeInfo Item0="{62A6EF11-30E6-404F-8852-B4EBDCDCECB3}" />
+																<Properties>
+																	<Property Name="JavaFullClassName">
+																		<Value Value="javax.swing.JButton" />
+																	</Property>
+																	<Property Name="AWTComponentAccessibleName">
+																		<Value Value="Book Tickets" />
+																	</Property>
+																</Properties>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="java" Owner="{1FE8A7B9-83DC-4D5F-9CC2-2A294D022482}">
+			<Child Name="UserLogin" Owner="{47924578-C968-454F-9C60-286FB2ED7771}">
+				<Child Name="RootPane" Owner="{3C6C4FEE-421F-423F-8BEE-64F08A36AD39}">
+					<Child Name="null_layeredPane" Owner="{B1AA1D11-0095-4F1B-AB51-E1318B836617}">
+						<Child Name="Panel" Owner="{92DC37FA-B263-45A5-BFEC-CE6D74BA04A3}">
+							<Child Name="Button" Owner="{CFA702F2-E699-4F31-A775-C5D25C63F063}" />
+						</Child>
+					</Child>
+				</Child>
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

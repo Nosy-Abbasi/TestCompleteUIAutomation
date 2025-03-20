@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{3482683B-D2FC-482D-9EBD-F611BD3530FB}">
+	<children>
+		<child name="JavaDesktopAppAutomationTestComplete" key="{D3938D4F-3203-49A5-87E9-153A9322F550}" path="JavaDesktopAppAutomationTestComplete\JavaDesktopAppAutomationTestComplete.mds" />
+	</children>
+	<testItems key="{E22B3CE0-71A7-4255-9383-1C86E9CEEC05}">
+		<children>
+			<testItem key="{D3938D4F-3203-49A5-87E9-153A9322F550}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{8261F08B-AE7D-41D2-B771-FA16D37AA585}" />
+	<analysis key="{B0A336CD-2A55-402A-B7E4-C960A50F9A65}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>

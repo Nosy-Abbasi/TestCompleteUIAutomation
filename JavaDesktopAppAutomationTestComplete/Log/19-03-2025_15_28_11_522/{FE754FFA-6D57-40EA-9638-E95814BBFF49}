@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="details" type="S" value="{2CBB8DEF-3DC4-41D1-BDC2-34C5453420F7}"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="name" type="S" value="103 - Login [KeywordTests - Login]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45735.6446556481"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="45735.644577963"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="details" type="S" value=""/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="name" type="S" value="Element to be run"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45735.6445779514"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="45735.6445779514"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="details" type="S" value=""/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="name" type="S" value="No element to be run for the 'AutomationSuite' test item was specified."/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45735.6445779514"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="start time" type="D" value="45735.6445779514"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="details" type="S" value="{AE369F44-9C25-4BF4-8F01-07ABCDBBEA5C}"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="name" type="S" value="102 - Failed Test [Script\test_booking - test_book_ticket1]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45735.6449544907"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="start time" type="D" value="45735.6448584028"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="details" type="S" value="{93AF3791-545B-41E9-8860-D37F36FE4A83}"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="name" type="S" value="101 - Passed Test [Script\test_booking - test_book_ticket]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45735.6448583449"/>
+				<Prp name="status" type="I" value="1"/>
+				<Prp name="start time" type="D" value="45735.6446557755"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

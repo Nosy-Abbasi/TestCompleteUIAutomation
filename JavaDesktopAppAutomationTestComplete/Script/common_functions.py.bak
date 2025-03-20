@@ -1,0 +1,81 @@
+﻿import json
+import os
+import time
+
+def launch_application():
+    """Launch the Java-based desktop application."""
+    try:
+        TestedApps.railway.Run()
+        Log.Message("Application launched successfully.")
+    except Exception as e:
+        Log.Error(f"Failed to launch application: {str(e)}")
+
+def click(element, description="Element"):
+    """Click an element and log the action."""
+    try:
+        eval(element).Click()
+        Log.Message(f"Clicked on {description}")
+    except Exception as e:
+        Log.Error(f"Failed to click {description}: {str(e)}")
+
+def enter_text(element, text, description="Text Field"):
+    """Enter text into a field and log the action."""
+    try:
+        eval(element).Keys(text)
+        Log.Message(f"Entered '{text}' in {description}")
+    except Exception as e:
+        Log.Error(f"Failed to enter text in {description}: {str(e)}")
+
+def get_text(element, description="Label"):
+    """Retrieve text from an element."""
+    try:
+        text = eval(element).text
+        Log.Message(f"Text retrieved from {description}: {text}")
+        return text
+    except Exception as e:
+        Log.Error(f"Failed to retrieve text from {description}: {str(e)}")
+        return ""
+
+def delay(seconds):
+    """Pause execution for given seconds."""
+    aqUtils.Delay(seconds * 1000, f"Waiting for {seconds} seconds...")
+
+#def load_test_data(file_name):
+    #"""Load test data from JSON file located in JSONData folder."""
+    #base_path = os.path.dirname(os.path.abspath("C:\Users\SpanIdea\OneDrive\문서\TestComplete 15 Projects\JavaDesktopAppAutomationTestComplete\JavaDesktopAppAutomationTestComplete\Script"))  # Get current script directory
+    #file_path = os.path.join(base_path, "..", "JSONData", file_name)  # Adjust path
+
+    #if not os.path.exists(file_path):
+    #   raise FileNotFoundError(f"Test data file not found: {file_path}")
+
+    #with open(file_path, "r") as f:
+     #   return json.load(f)
+     
+     
+def compare_messages(expected, actual, description="Message"):
+    """Compare expected and actual messages and log the result."""
+    
+    # Ensure actual is a string
+    actual = str(actual).strip()
+    expected = str(expected).strip()
+    
+    if actual == expected:
+        Log.Message(f"{description} verification passed: '{actual}'")
+        return True
+    else:
+        Log.Error(f"{description} verification failed! Expected: '{expected}', Got: '{actual}'")
+        return False
+
+     
+     
+def close_application():
+    """Closes the application using taskkill."""
+    try:
+        os.system(f"taskkill /F /IM railway.exe")
+        os.system(f"taskkill /F /IM railway.exe")  # Force close the application
+        time.sleep(0.3)  # Equivalent to snooze
+        os.system(f"taskkill /F /IM railway.exe")
+        Log.Message(f"railway app closed successfully.")
+    except Exception as e:
+        Log.Error(f"Error occurred while closing the application: {str(e)}")
+        raise

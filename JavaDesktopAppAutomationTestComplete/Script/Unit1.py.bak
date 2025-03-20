@@ -1,0 +1,45 @@
+﻿
+def Test1():
+  TestedApps.railway.Run()
+  
+  NameMapping.Sys.BookTicketsButton.UserLogin.RootPane.null_layeredPane.Panel.Button.ClickButton()
+  
+  Aliases.BookTicketsButton.SwingObject("Add", "Booking Panel", 0).Keys("Test")
+  
+  Aliases.BookTicketsButton.Add_.RootPane.null_layeredPane.Panel.TextArea.Keys("Test")
+  
+  Aliases.BookTicketsButton.Add_.RootPane.null_layeredPane.Panel.SwingObject("JRadioButton", "Day", 0).Click()
+
+  Aliases.BookTicketsButton.Add_.RootPane.null_layeredPane.Panel.SwingObject("JButton", "Add", 0).Click()
+  
+  Aliases.BookTicketsButton.Dialog.RootPane.null_layeredPane.null_contentPane.OptionPane.OptionPane_buttonArea.OptionPane_button.Click()
+  
+  aqUtils.Delay(5000, "Waiting for 5 seconds...")
+  
+  SuccessMessage = Aliases.BookTicketsButton.SuccessPopup.RootPane.null_layeredPane.null_contentPane.OptionPane.Panel.OptionPane_realBody.OptionPane_body.OptionPane_label.text
+  
+  Log.Message("SuccessMessage =", SuccessMessage)
+  
+  ExpectedMessage = "Ticket is booked sucessfully."
+  
+  assert SuccessMessage == ExpectedMessage
+  
+  Log.Message("SuccessMessage =", SuccessMessage)
+  
+  NameMapping.Sys.BookTicketsButton.SuccessPopup.RootPane.null_layeredPane.null_contentPane.OptionPane.Panel.SwingObject("OptionPane.button").Click()
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

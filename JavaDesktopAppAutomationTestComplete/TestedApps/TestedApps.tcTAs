@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" version="1400" key="{42708F16-EB49-4F58-9D45-E6000A08E924}" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}">
+	<config nodeName="TestedApps" />
+	<testData />
+	<data />
+	<children>
+		<child key="{3B310369-46CD-46D5-9EEA-2EDC232FE2DC}">
+			<config nodeName="railway" autorunOnRecording="True" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="True">
+				<runModeParams activeRunMode="Java">
+					<param name="Java" parameters="" workFolder="" jvmExecutable="C:\Program Files\Java\jre-1.8\Bin\java.exe" runAsJar="True" jarFileName="C:\Users\SpanIdea\OneDrive\Desktop\Broadcom Automation\Java-JavaFx-Swing-Projects-Desktop-Application-GUI-Software\Software Executable JAR\railway.jar" entryPoint="" classPaths="" applicationArguments="" options="" />
+				</runModeParams>
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+</Root>
